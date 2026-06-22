@@ -9,11 +9,14 @@
   <a href="https://github.com/OpenBMB/SHIFT" alt="GitHub">
     <img src="https://img.shields.io/badge/GitHub-SHIFT-black?logo=github"/>
   </a>
-  <a href="https://arxiv.org/pdf/xxx.xxx" alt="Paper">
+  <a href="#citation" alt="Paper">
     <img src="https://img.shields.io/badge/Paper-SHIFT-B31B1B?logo=arxiv&logoColor=white"/>
   </a>
   <a href="https://huggingface.co/ITcoder/SHIFT" alt="Checkpoints">
     <img src="https://img.shields.io/badge/Checkpoints-SHIFT-yellowgreen?logo=huggingface"/>
+  </a>
+  <a href="LICENSE" alt="license">
+    <img src="https://img.shields.io/badge/license-MIT-e8b500?logo=license"/>
   </a>
 </p>
 
