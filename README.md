@@ -91,7 +91,7 @@ python multi_gpu.py
 ```
 
 
-### 📃 Evaluation
+### 📊 Evaluation
 For MRQA and ConfiQA: 
 ```
 python eval.py
