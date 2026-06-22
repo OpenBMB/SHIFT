@@ -44,44 +44,32 @@ SHIFT is a lightweight framework for resolving knowledge conflicts in retrieval-
 
 
 ## ⚙️ Setup
+1. Create Conda Environment
 ```bash
 conda create --name shift python==3.10.0
 conda activate shift
 git clone https://github.com/OpenBMB/SHIFT.git
 cd SHIFT
 ```
-1. Install PyTorch
+2. Install PyTorch
 ```
 pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cu124
 ```
-2. Install Flash Attention
+3. Install Flash Attention
 ```
 pip install https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.6cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
 ```
-3. Install the rest of the dependencies:
+4. Install the rest of the dependencies:
 ```
 pip install -r requirements.txt
 ```
-4. Patch vLLM model files  
-This project requires modifications to the vLLM implementations of Qwen3 and LLaMA.  
-After installing vLLM, replace the corresponding files in your current Python environment:
+5. Patch vLLM model files  
+This project requires modifications to the vLLM implementations of Qwen3 and LLaMA.
+After installing the requirements, run the patch script:
 ```
-VLLM_DIR=$(python -c "import pathlib, vllm; print(pathlib.Path(vllm.__file__).resolve().parent)")
-
-cp SHIFT/vllm/qwen3.py "$VLLM_DIR/model_executor/models/qwen3.py"
-cp SHIFT/vllm/llama.py "$VLLM_DIR/model_executor/models/llama.py"
+bash patch_vllm.sh
 ```
-You can verify the patched files with:
-```
-python -c "import pathlib, vllm; print(pathlib.Path(vllm.__file__).resolve().parent)"
-```
-The expected target paths look like:
-```
-/path/to/your/env/lib/python3.10/site-packages/vllm/model_executor/models/qwen3.py
-/path/to/your/env/lib/python3.10/site-packages/vllm/model_executor/models/llama.py
-```
-Note: the vLLM patch should be applied after running ```pip install -r requirements.txt```, because installing or reinstalling vLLM may overwrite these files.
-
+> Note: Please run this script after 'pip install -r requirements.', because installing or reinstalling vLLM may overwrite the patched files.
 
 ### Data
 
@@ -89,7 +77,7 @@ Our training data can be downloaded from [SHIFT](https://huggingface.co/datasets
 
 
 To construct the data from scratch, download the files from [MRQA-Shared-Task-2019](https://github.com/mrqa/MRQA-Shared-Task-2019).  
-Use the downloaded data to synthesize the data using [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG).
+Use the downloaded data to synthesize it with [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG).
 
 
 ### Training
@@ -151,8 +139,8 @@ If you find this work useful, please cite our paper and give us a shining star �
 
 
 ## 📧 Contact
-If you have questions or collaboration opportunities, please feel free to email:
+If you have questions, collaboration opportunities, or potential PhD opportunities in the United States, please feel free to email:
 ```
-ruochangli@gmail.com
+li.draco.neu@gmail.com
 ```
 
