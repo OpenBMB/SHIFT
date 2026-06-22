@@ -71,7 +71,7 @@ bash vllm/patch_vllm.sh
 ```
 > Note: Please run this script after 'pip install -r requirements.', because installing or reinstalling vLLM may overwrite the patched files.
 
-### Data
+### ⚡ Data
 
 Our training data can be downloaded from [SHIFT](https://huggingface.co/datasets/ITcoder/SHIFT_Training_Data). After downloading, place the files into the dataset folder.
 
@@ -80,7 +80,7 @@ To construct the data from scratch, download the files from [MRQA-Shared-Task-20
 Use the downloaded data to synthesize it with [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG).
 
 
-### Training
+### 🔥 Training
 GRPO with a single GPU: 
 ```
 python single_gpu.py
@@ -91,7 +91,7 @@ python multi_gpu.py
 ```
 
 
-### Evaluation
+### 📃 Evaluation
 For MRQA and ConfiQA: 
 ```
 python eval.py
@@ -99,7 +99,7 @@ python eval.py
 For MMLU, use [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness)
 
 
-### Analysis
+### 🎯 Analysis
 We also provide the t-SNE visualization pipeline for gates in SHIFT, with corresponding figures available under the figs folder:
 ```
 python run_batch_tsne.py
@@ -116,7 +116,7 @@ For Qwen-3-8B:
 
 
 
-## 📄 Acknowledgement 
+## 🎉 Acknowledgement 
 Our work is built on the following codebases, and we are deeply grateful for their contributions.
 - [vllm](https://github.com/vllm-project/vllm)
 - [nano-aha-moment](https://github.com/McGill-NLP/nano-aha-moment)
