@@ -1,11 +1,24 @@
+<!-- title -->
 <div align="center">
 <h1> SHIFT: Gate-Modulated Activation Steering for Knowledge Conflict Mitigation in Retrieval-Augmented Generation
 <h5 align="center"> 
-  
-<a href='xxx'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
-<a href='https://huggingface.co/ITcoder/SHIFT'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-checkpoints-blue'>
 
 
+<!-- hyperlinks -->
+<p align="center">
+  <a href="https://github.com/OpenBMB/SHIFT" alt="GitHub">
+    <img src="https://img.shields.io/badge/GitHub-SHIFT-black?logo=github"/>
+  </a>
+  <a href="https://arxiv.org/pdf/xxx.xxx" alt="Paper">
+    <img src="https://img.shields.io/badge/Paper-SHIFT-B31B1B?logo=arxiv&logoColor=white"/>
+  </a>
+  <a href="https://huggingface.co/ITcoder/SHIFT" alt="Checkpoints">
+    <img src="https://img.shields.io/badge/Checkpoints-SHIFT-yellowgreen?logo=huggingface"/>
+  </a>
+</p>
+
+
+<!-- authors -->
 Ruochang Li<sup>1*</sup>,
 Pengcheng Huang<sup>1\*</sup>,
 Zhenghao Liu<sup>1†</sup>,
@@ -27,13 +40,14 @@ Maosong Sun<sup>2</sup>
   <img src="figs/framework.png" alt="SHIFT overview" width="95%">
 </p>
 
+SHIFT is a lightweight framework for resolving knowledge conflicts in retrieval-augmented generation. Instead of directly editing internal neurons, SHIFT adds a small learnable gate module to frozen LLMs, allowing them to adaptively balance retrieved context and parametric knowledge during generation. With fewer than 0.01% trainable parameters, SHIFT improves context reliance while minimizing unintended effects on general model capabilities.
 
 
 ## ⚙️ Setup
 ```bash
 conda create --name shift python==3.10.0
 conda activate shift
-git clone https://github.com/NEUIR/SHIFT.git
+git clone https://github.com/OpenBMB/SHIFT.git
 cd SHIFT
 ```
 1. Install PyTorch
@@ -71,9 +85,10 @@ Note: the vLLM patch should be applied after running ```pip install -r requireme
 
 ### Data
 
-Our corresponding generated training data is placed under the dataset folder.
+Our training data can be downloaded from [SHIFT](https://huggingface.co/datasets/ITcoder/SHIFT). After downloading, place the files into the dataset folder.
 
-Download the files from [MRQA-Shared-Task-2019](https://github.com/mrqa/MRQA-Shared-Task-2019).  
+
+To construct the data from scratch, download the files from [MRQA-Shared-Task-2019](https://github.com/mrqa/MRQA-Shared-Task-2019).  
 Use the downloaded data to synthesize the data using [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG).
 
 
