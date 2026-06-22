@@ -116,7 +116,7 @@ For Qwen-3-8B:
 
 
 
-## 🎉 Acknowledgement 
+### 🎉 Acknowledgement 
 Our work is built on the following codebases, and we are deeply grateful for their contributions.
 - [vllm](https://github.com/vllm-project/vllm)
 - [nano-aha-moment](https://github.com/McGill-NLP/nano-aha-moment)
@@ -126,7 +126,7 @@ Our work is built on the following codebases, and we are deeply grateful for the
   
 
 
-## 🥰 Citation
+### 🥰 Citation
 If you find this work useful, please cite our paper and give us a shining star 🌟
 ```bibtex
 @article{Li2026shift,
@@ -138,7 +138,7 @@ If you find this work useful, please cite our paper and give us a shining star �
 ```
 
 
-## 📧 Contact
+### 📧 Contact
 If you have questions, collaboration opportunities, or potential PhD opportunities in the United States, please feel free to email:
 ```
 li.draco.neu@gmail.com
