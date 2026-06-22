@@ -15,7 +15,7 @@
   <a href="https://huggingface.co/ITcoder/SHIFT" alt="Checkpoints">
     <img src="https://img.shields.io/badge/Checkpoints-SHIFT-yellowgreen?logo=huggingface"/>
   </a>
-  <a href="LICENSE" alt="license">
+  <a href="LICENSE" alt="License">
     <img src="https://img.shields.io/badge/license-MIT-e8b500?logo=license"/>
   </a>
 </p>
