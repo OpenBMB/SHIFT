@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/badge/Checkpoints-SHIFT-yellowgreen?logo=huggingface"/>
   </a>
   <a href="LICENSE" alt="License">
-    <img src="https://img.shields.io/badge/license-MIT-e8b500?logo=license"/>
+    <img src="https://img.shields.io/badge/License-MIT-e8b500?logo=license"/>
   </a>
 </p>
 
