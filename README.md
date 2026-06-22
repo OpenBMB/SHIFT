@@ -3,8 +3,7 @@
 <h5 align="center"> 
   
 <a href='xxx'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
-<a href='https://huggingface.co/Qwen/Qwen3-32B'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-模型的名字-blue'>
-<a href='https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-模型的名字-blue'>
+<a href='https://huggingface.co/ITcoder/SHIFT'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-checkpoints-blue'>
 
 
 Ruochang Li<sup>1*</sup>,
