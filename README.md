@@ -68,7 +68,7 @@ pip install -r requirements.txt
 ```
 5. Patch vLLM model files  
 This project requires modifications to the vLLM implementations of Qwen3 and LLaMA.
-After installing the requirements, run the patch script
+After installing the requirements, run the patch script:
 ```
 bash vllm/patch_vllm.sh
 ```
