@@ -144,6 +144,6 @@ If you find this work useful, please cite our paper and give us a shining star ð
 ### ðŸ“§ Contact
 If you have questions, collaboration opportunities, or potential PhD opportunities in the United States, please feel free to email:
 ```
-li.draco.neu@gmail.com
+ruochangli@gmail.com
 ```
 
