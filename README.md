@@ -62,7 +62,7 @@ pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cu124
 ```
 pip install https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.6cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
 ```
-4. Install the rest of the dependencies:
+4. Install the rest of the dependencies
 ```
 pip install -r requirements.txt
 ```
