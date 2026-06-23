@@ -76,7 +76,7 @@ bash vllm/patch_vllm.sh
 
 ### ⚡ Data
 
-Our training data can be downloaded from [SHIFT](https://huggingface.co/datasets/ITcoder/SHIFT_Training_Data). After downloading, place the files into the dataset folder.
+Our training data can be downloaded from [SHIFT_Training_Data](https://huggingface.co/datasets/ITcoder/SHIFT_Training_Data). After downloading, place the files into the dataset folder.
 
 
 To construct the data from scratch, download the files from [MRQA-Shared-Task-2019](https://github.com/mrqa/MRQA-Shared-Task-2019).  
