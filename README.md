@@ -9,7 +9,7 @@
   <a href="https://github.com/OpenBMB/SHIFT" alt="GitHub">
     <img src="https://img.shields.io/badge/GitHub-SHIFT-black?logo=github"/>
   </a>
-  <a href="#citation" alt="Paper">
+  <a href="https://arxiv.org/abs/2606.27786" alt="Paper">
     <img src="https://img.shields.io/badge/Paper-SHIFT-B31B1B?logo=arxiv&logoColor=white"/>
   </a>
   <a href="https://huggingface.co/ITcoder/SHIFT" alt="Checkpoints">
@@ -132,11 +132,14 @@ Our work is built on the following codebases, and we are deeply grateful for the
 ### 🥰 Citation
 If you find this work useful, please cite our paper and give us a shining star 🌟
 ```bibtex
-@article{Li2026shift,
-      title={SHIFT: Gate-Modulated Activation Steering for Knowledge Conflict Mitigation in Retrieval-Augmented Generation},
-      author={Li, Ruochang and Huang, Pengcheng and Liu, Zhenghao and Yan, Yukun and Xie, Huiyuan and Gu, Yu and Yu, Ge and Sun, Maosong},
-      year={2026}
-      url={}, 
+@misc{li2026shiftgatemodulatedactivationsteering,
+      title={SHIFT: Gate-Modulated Activation Steering for Knowledge Conflict Mitigation in Retrieval-Augmented Generation}, 
+      author={Ruochang Li and Pengcheng Huang and Zhenghao Liu and Yukun Yan and Huiyuan Xie and Yu Gu and Ge Yu and Maosong Sun},
+      year={2026},
+      eprint={2606.27786},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2606.27786}, 
 }
 ```
 
