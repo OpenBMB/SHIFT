@@ -95,11 +95,13 @@ python multi_gpu.py
 
 
 ### 📊 Evaluation
-For MRQA and ConfiQA: 
+We provide the trained checkpoints for [six LLMs](https://huggingface.co/ITcoder/SHIFT).  
+
+To evaluate on the MRQA and ConfiQA benchmarks: 
 ```
 python eval.py
 ```
-For MMLU, use [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness)
+To evaluate on the MMLU benchmark, use [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness).  
 
 
 ### 🎯 Analysis
