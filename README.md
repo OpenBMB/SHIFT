@@ -95,7 +95,7 @@ python multi_gpu.py
 
 
 ### 📊 Evaluation
-We provide the trained checkpoints for [six LLMs](https://huggingface.co/ITcoder/SHIFT).  
+We provide the trained checkpoints for [six LLMs](https://huggingface.co/ITcoder/SHIFT) on huggingface.  
 
 To evaluate on the MRQA and ConfiQA benchmarks: 
 ```
