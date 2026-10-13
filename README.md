@@ -1,6 +1,6 @@
 <!-- title -->
 <div align="center">
-<h1> SHIFT: Gate-Modulated Activation Steering for Knowledge Conflict Mitigation in Retrieval-Augmented Generation
+<h1> SPARK: Adaptive Parametric Knowledge Participation for Faithful Retrieval-Augmented Generation
 <h5 align="center"> 
 
 
@@ -40,19 +40,20 @@ Maosong Sun<sup>2</sup>
 
 ## 📖 Overview
 <p align="center">
-  <img src="figs/framework.png" alt="SHIFT overview" width="95%">
+  <img src="figs/framework.png" alt="SPARK overview" width="95%">
 </p>
 
+<!-- todo: 更新spark的内容 -->
 SHIFT is a lightweight framework for resolving knowledge conflicts in retrieval-augmented generation. Instead of directly editing internal neurons, SHIFT adds a small learnable gate module to frozen LLMs, allowing them to adaptively balance retrieved context and parametric knowledge during generation. With fewer than 0.01% trainable parameters, SHIFT improves context reliance while minimizing unintended effects on general model capabilities.
 
 
 ## ⚙️ Setup
 1. Create Conda Environment
 ```bash
-conda create --name shift python==3.10.0
+conda create --name spark python==3.10.0
 conda activate shift
 git clone https://github.com/OpenBMB/SHIFT.git
-cd SHIFT
+cd SPARK
 ```
 2. Install PyTorch
 ```
@@ -75,8 +76,9 @@ bash vllm/patch_vllm.sh
 > Note: Please run this script after 'pip install -r requirements.', because installing or reinstalling vLLM may overwrite the patched files.
 
 ### ⚡ Data
+<!-- todo: 更新training data -->
 
-Our training data can be downloaded from [SHIFT_Training_Data](https://huggingface.co/datasets/ITcoder/SHIFT_Training_Data). After downloading, place the files into the dataset folder.
+Our training data can be downloaded from [SPARK_Training_Data](https://huggingface.co/datasets/ITcoder/SHIFT_Training_Data). After downloading, place the files into the dataset folder.
 
 
 To construct the data from scratch, download the files from [MRQA-Shared-Task-2019](https://github.com/mrqa/MRQA-Shared-Task-2019).  
@@ -95,7 +97,9 @@ python multi_gpu.py
 
 
 ### 📊 Evaluation
-We provide the trained checkpoints for [six LLMs](https://huggingface.co/ITcoder/SHIFT) on huggingface.  
+<!-- todo: 更新最新的sft和spark的checkpoints: 1.7B 和 8B-->
+
+We provide the SFT checkpoints and the trained checkpoints(https://huggingface.co/ITcoder/SHIFT) on Hugging Face.  
 
 To evaluate on the MRQA and ConfiQA benchmarks: 
 ```
@@ -105,7 +109,9 @@ To evaluate on the MMLU benchmark, use [lm-evaluation-harness](https://github.co
 
 
 ### 🎯 Analysis
-We also provide the t-SNE visualization pipeline for gates in SHIFT, with corresponding figures available under the figs folder:
+<!-- todo: 更新最新的t-SNE 可视化内容: 1.7B和8B -->
+
+We also provide the t-SNE visualization pipeline for gates in SPARK, with corresponding figures available under the figs folder:
 ```
 python run_batch_tsne.py
 ```
@@ -132,6 +138,8 @@ Our work is built on the following codebases, and we are deeply grateful for the
 
 
 ### 🥰 Citation
+<!-- todo: 10.14 arxiv更新之后, 更新相应的引用 -->
+
 If you find this work useful, please cite our paper and give us a shining star 🌟
 ```bibtex
 @misc{li2026shiftgatemodulatedactivationsteering,
