@@ -6,14 +6,14 @@
 
 <!-- hyperlinks -->
 <p align="center">
-  <a href="https://github.com/OpenBMB/SHIFT" alt="GitHub">
-    <img src="https://img.shields.io/badge/GitHub-SHIFT-black?logo=github"/>
+  <a href="https://github.com/OpenBMB/SPARK" alt="GitHub">
+    <img src="https://img.shields.io/badge/GitHub-SPARK-black?logo=github"/>
   </a>
   <a href="https://arxiv.org/abs/2606.27786" alt="Paper">
-    <img src="https://img.shields.io/badge/Paper-SHIFT-B31B1B?logo=arxiv&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Paper-SPARK-B31B1B?logo=arxiv&logoColor=white"/>
   </a>
   <a href="https://huggingface.co/ITcoder/SHIFT" alt="Checkpoints">
-    <img src="https://img.shields.io/badge/Checkpoints-SHIFT-yellowgreen?logo=huggingface"/>
+    <img src="https://img.shields.io/badge/Checkpoints-SPARK-yellowgreen?logo=huggingface"/>
   </a>
   <a href="LICENSE" alt="License">
     <img src="https://img.shields.io/badge/License-MIT-e8b500?logo=license"/>
@@ -52,7 +52,7 @@ SHIFT is a lightweight framework for resolving knowledge conflicts in retrieval-
 ```bash
 conda create --name spark python==3.10.0
 conda activate shift
-git clone https://github.com/OpenBMB/SHIFT.git
+git clone https://github.com/OpenBMB/SPARK.git
 cd SPARK
 ```
 2. Install PyTorch
@@ -138,12 +138,11 @@ Our work is built on the following codebases, and we are deeply grateful for the
 
 
 ### 🥰 Citation
-<!-- todo: 10.14 arxiv更新之后, 更新相应的引用 -->
 
 If you find this work useful, please cite our paper and give us a shining star 🌟
 ```bibtex
-@misc{li2026shiftgatemodulatedactivationsteering,
-      title={SHIFT: Gate-Modulated Activation Steering for Knowledge Conflict Mitigation in Retrieval-Augmented Generation}, 
+@misc{li2026sparkadaptiveparametricknowledge,
+      title={SPARK: Adaptive Parametric Knowledge Participation for Faithful Retrieval-Augmented Generation}, 
       author={Ruochang Li and Pengcheng Huang and Zhenghao Liu and Yukun Yan and Huiyuan Xie and Yu Gu and Ge Yu and Maosong Sun},
       year={2026},
       eprint={2606.27786},
