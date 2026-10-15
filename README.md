@@ -43,9 +43,7 @@ Maosong Sun<sup>2</sup>
   <img src="figs/framework.png" alt="SPARK overview" width="95%">
 </p>
 
-<!-- todo: 更新spark的内容 -->
-SHIFT is a lightweight framework for resolving knowledge conflicts in retrieval-augmented generation. Instead of directly editing internal neurons, SHIFT adds a small learnable gate module to frozen LLMs, allowing them to adaptively balance retrieved context and parametric knowledge during generation. With fewer than 0.01% trainable parameters, SHIFT improves context reliance while minimizing unintended effects on general model capabilities.
-
+SPARK is a lightweight framework that learns adaptive knowledge participation policies for faithful retrieval-augmented generation. With the backbone LLM frozen, its participation policy dynamically regulates layer-wise FFN contributions, determining when and to what extent parametric knowledge participates during generation. Optimized through faithfulness-guided reinforcement learning using response-level rewards, SPARK mitigates catastrophic forgetting and better preserves general generation capabilities compared to full-parameter supervised fine-tuning.
 
 ## ⚙️ Setup
 1. Create Conda Environment
