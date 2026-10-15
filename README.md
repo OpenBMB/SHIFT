@@ -110,18 +110,18 @@ To evaluate on the MMLU benchmark, use [lm-evaluation-harness](https://github.co
 
 ### 🎯 Analysis
 
-We also provide the t-SNE visualization pipeline for gates in SPARK, with corresponding figures available under the figs folder:
+We also provide the t-SNE visualization pipeline for participation vectors in SPARK, with corresponding figures available under the figs folder:
 ```
 python run_batch_tsne.py
 ```
 
 For Qwen-3-1.7B: 
 <p align="center">
-  <img src="figs/qwen-3-1.7B-tsne.png" alt=" Qwen-3-1.7B" width="50%">
+  <img src="figs/qwen3-1.7B-tsne.png" alt=" Qwen-3-1.7B" width="50%">
 </p>
 For Qwen-3-8B:
 <p align="center">
-  <img src="figs/qwen-3-8B-tsne.png" alt=" Qwen-3-8B" width="50%">
+  <img src="figs/qwen3_8B_tsne.png" alt=" Qwen-3-8B" width="50%">
 </p>
 
 
